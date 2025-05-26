@@ -1,5 +1,6 @@
 library("shiny")
-
+install.packages("jsonlite")
+library(jsonlite)
 ui <- fluidPage(
     textInput("nome", "Qual seu nome:"),
    

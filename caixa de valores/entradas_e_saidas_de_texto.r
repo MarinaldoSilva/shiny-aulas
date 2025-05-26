@@ -1,7 +1,8 @@
 library("shiny")
 
-lista_materias <- c("Portuges", "Matematica", "Geografia", "historia")
 
+lista_materias <- c("Portuges", "Matematica", "Geografia", "historia")
+#array_valores <- c(1,2)
 ui <- fluidPage(
 
   textInput("nomeAula", "Nome da aula"),
