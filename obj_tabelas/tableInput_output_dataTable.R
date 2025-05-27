@@ -11,7 +11,8 @@ ui <- fluidPage(
 
 server <- function(input, output, session) {
   #output$dfDados <- renderTable(head(df))
-  output$dfdDados <- renderDataTable(df, options = list(pageLength=20))
+  output$dfdDados <- renderDataTable(
+    df, options = list(pageLength=20))
 }
 
 shinyApp(ui, server)
