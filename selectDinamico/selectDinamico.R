@@ -12,19 +12,16 @@ choices_MG <- list("Belo Horizonte" = 105, "Ouro Preto" = 106, "Diamantina" = 10
 choices_SP <- list("São Paulo " = 205,"Guarulhos" = 206, "Campinas" = 207)
 choices_RJ <- list("Rio de Janeiro" = 305, "Mesquita" = 306 , "Nova Friburgo" = 307)
 
-ui <- dashboardPage(skin = "blue",
+ui <- dashboardPage(skin = "purple",
                     dashboardHeader(
-                      title = "Select",
+                      title = "Select Multiple",
                       titleWidth = 186
                     ),
                     dashboardSidebar(
-                      tags$p(),
                       selectInput("selectEstado", label = "Estados", choices = estados),
                       uiOutput("ui"),
-                      #Documentacao: https://shiny.rstudio.com/articles/selectCidade-ui.html
-                      
                       tags$div(class = "alinhamento",
-                               actionButton("filtrar", "Filtrar")
+                        actionButton("filtrar", "Filtrar")
                       )
                     ),
                     dashboardBody(
