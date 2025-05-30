@@ -7,7 +7,7 @@ ui <- fluidPage(
     sidebarPanel(
       checkboxGroupInput(
         inputId = "checkboxID", label = "Selecione os produtos",
-        list("TV" = 1, "SMARTPHONE" =2, "SOM" =3, "NOTEBOOK" =4)
+        list("TV" = "televisão", "SMARTPHONE" = "cel", "SOM" =3, "NOTEBOOK" =4)
         
       )
     ),
